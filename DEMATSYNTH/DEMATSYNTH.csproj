@@ -8,21 +8,21 @@
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
     <IsPackable>true</IsPackable>
     <RootNamespace>DEMATSYNTH</RootNamespace>
-    <TargetFramework>net9.0-macos</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <InformationalVersion>$([System.DateTime]::UtcNow.ToString("yyyy\-MM\-dd HH\:mm\:ss"))</InformationalVersion>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
 	<NoWarn>CS8618; CS8625; CS8629; </NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="DEMATSYNTH.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="NAudio" Version="2.2.1" />
     <PackageReference Include="YamlDotNet" Version="16.3.0" />
   </ItemGroup>
 	
+  <ItemGroup>
+      <KnownFrameworkReference Update="Microsoft.WindowsDesktop.App.WindowsForms" IsWindowsOnly="false" />
+  </ItemGroup>
+
   <ItemGroup>
       <ProjectReference Include="..\ECommons\ECommons\ECommons.csproj" />
   </ItemGroup>

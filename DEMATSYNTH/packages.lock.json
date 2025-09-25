@@ -1,7 +1,7 @@
 {
   "version": 1,
   "dependencies": {
-    "net9.0-macos15.0": {
+    "net9.0-windows7.0": {
       "DalamudPackager": {
         "type": "Direct",
         "requested": "[13.1.0, )",
@@ -14,12 +14,6 @@
         "resolved": "1.2.25",
         "contentHash": "xCXiw7BCxHJ8pF6wPepRUddlh2dlQlbr81gXA72hdk4FLHkKXas7EH/n+fk5UCA/YfMqG1Z6XaPiUjDbUNBUzg=="
       },
-      "Microsoft.NET.ILLink.Tasks": {
-        "type": "Direct",
-        "requested": "[9.0.9, )",
-        "resolved": "9.0.9",
-        "contentHash": "cHi1os/s6aobEgNkbOh/jW+ru//rHuedvj4PmTh2mMY7et/mJjqphBeXeKCesDvMd0+E2JyX9EPZZC4VRKslXg=="
-      },
       "NAudio": {
         "type": "Direct",
         "requested": "[2.2.1, )",
@@ -30,6 +24,7 @@
           "NAudio.Core": "2.2.1",
           "NAudio.Midi": "2.2.1",
           "NAudio.Wasapi": "2.2.1",
+          "NAudio.WinForms": "2.2.1",
           "NAudio.WinMM": "2.2.1"
         }
       },
@@ -81,6 +76,14 @@
         "contentHash": "lFfXoqacZZe0WqNChJgGYI+XV/n/61LzPHT3C1CJp4khoxeo2sziyX5wzNYWeCMNbsWxFvT3b3iXeY1UYjBhZw==",
         "dependencies": {
           "NAudio.Core": "2.2.1"
+        }
+      },
+      "NAudio.WinForms": {
+        "type": "Transitive",
+        "resolved": "2.2.1",
+        "contentHash": "DlDkewY1myY0A+3NrYRJD+MZhZV0yy1mNF6dckB27IQ9XCs/My5Ip8BZcoSHOsaPSe2GAjvoaDnk6N9w8xTv7w==",
+        "dependencies": {
+          "NAudio.WinMM": "2.2.1"
         }
       },
       "NAudio.WinMM": {

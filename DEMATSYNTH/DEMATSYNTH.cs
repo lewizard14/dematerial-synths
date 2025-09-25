@@ -1,5 +1,5 @@
-using ECommons.Automation.NeoTaskManager;
-using ECommons.Configuration;
+// using ECommons.Automation.NeoTaskManager;
+// using ECommons.Configuration;
 using System.Collections.Generic;
 
 namespace DEMATSYNTH;
@@ -49,7 +49,7 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
     internal DebugWindow debugWindow;
 
     // Taskmanager from Ecommons
-    internal TaskManager TaskManager;
+    // internal TaskManager TaskManager;
 
     // // Internal IPC's that I use for... well plugins. 
     // internal LifestreamIPC Lifestream;
@@ -91,7 +91,7 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
         Init();
         Svc.Framework.Update += Tick;
 
-        TaskManager = new(new(showDebug: false));
+        // TaskManager = new(new(showDebug: false));
         Svc.PluginInterface.UiBuilder.Draw += windowSystem.Draw;
         Svc.PluginInterface.UiBuilder.OpenMainUi += () =>
         {
