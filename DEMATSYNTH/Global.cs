@@ -11,4 +11,5 @@ global using System.Linq;
 global using System.Numerics;
 global using System;
 global using DEMATSYNTH;
+global using static DEMATSYNTH.DEMATSYNTH;
 global using Dalamud.Plugin.Services;

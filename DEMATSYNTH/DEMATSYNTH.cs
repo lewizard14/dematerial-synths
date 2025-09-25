@@ -1,6 +1,8 @@
-// using ECommons.Automation.NeoTaskManager;
-// using ECommons.Configuration;
+using ECommons.Automation.NeoTaskManager;
+using ECommons.Configuration;
 using System.Collections.Generic;
+using DEMATSYNTH.Config;
+using DEMATSYNTH.Ui;
 
 namespace DEMATSYNTH;
 
@@ -45,8 +47,8 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
     internal WindowSystem windowSystem;
     internal MainWindow mainWindow;
     internal SettingsWindowV2 settingsWindowV2;
-    internal OverlayWindow overlayWindow;
-    internal DebugWindow debugWindow;
+    // internal OverlayWindow overlayWindow;
+    // internal DebugWindow debugWindow;
 
     // Taskmanager from Ecommons
     // internal TaskManager TaskManager;
@@ -82,8 +84,8 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
         windowSystem = new();
         mainWindow = new();
         settingsWindowV2 = new();
-        overlayWindow = new();
-        debugWindow = new();
+        // overlayWindow = new();
+        // debugWindow = new();
 
         EzCmd.Add("/dematsynth", OnCommand, """
             Open plugin interface
@@ -106,8 +108,7 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
 
     private static void Init()
     {
-        ExcelHelper.Init();
-        ConsumableInfo.Init();
+        
     }
 
     private void Tick(object _)
@@ -120,10 +121,10 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
         }
         else
         {
-            PlayerHandlers.DisablePlugin();
+            // PlayerHandlers.DisablePlugin();
         }
-        GenericManager.Tick();
-        TextAdvancedManager.Tick();
+        // GenericManager.Tick();
+        // TextAdvancedManager.Tick();
         // YesAlreadyManager.Tick();
     }
 
@@ -131,8 +132,8 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
     {
         GenericHelpers.Safe(() => Svc.Framework.Update -= Tick);
         GenericHelpers.Safe(() => Svc.PluginInterface.UiBuilder.Draw -= windowSystem.Draw);
-        GenericHelpers.Safe(TextAdvancedManager.UnlockTA);
-        GenericHelpers.Safe(YesAlreadyManager.Unlock);
+        // GenericHelpers.Safe(TextAdvancedManager.UnlockTA);
+        // GenericHelpers.Safe(YesAlreadyManager.Unlock);
         ECommonsMain.Dispose();
         // PictoService.Dispose();
     }
@@ -151,7 +152,7 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
 
         if (firstArg.ToLower() == "d" || firstArg.ToLower() == "debug")
         {
-            debugWindow.IsOpen = true;
+            // debugWindow.IsOpen = true;
             return;
         }
         // else if (firstArg.ToLower() == "s" || firstArg.ToLower() == "settings")
