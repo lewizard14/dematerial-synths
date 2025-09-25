@@ -1,21 +1,23 @@
-{
-    "Author": "Le Wizard",
-    "Name": "Dematerial Desynthesis",
-    "Punchline": "What if you could remove the materia when you desynth?",
-    "Description": "A little helper that lets you retrieval of all materia and then desynth an item.",
-    "Tags": [
-        "Materia",
-        "Desynthesis"
-    ],
-    "InternalName": "DEMATSYNTH",
-    "RepoUrl": "https://github.com/lewizard14/dematerial-synths/tree/main",
-    "DownloadCount": 1,
-    "LastUpdate": 1758819834,
-    "DownloadLinkInstall": "https://github.com/lewizard14/dematerial-synths/versions/0.0.0.1.zip",
-    "DownloadLinkUpdate": "https://github.com/lewizard14/dematerial-synths/versions/0.0.0.1.zip",
-    "AssemblyVersion": "0.0.0.1",
-    "ApplicableVersion": "any",
-    "DalamudApiLevel": "13",
-    "Changelog": "Init",
-    "IconUrl": "https://github.com/lewizard14/dematerial-synths/Data/icon.png"
-}
+[
+    {
+        "Author": "Le Wizard",
+        "Name": "Dematerial Desynthesis",
+        "Punchline": "What if you could remove the materia when you desynth?",
+        "Description": "A little helper that lets you retrieval of all materia and then desynth an item.",
+        "Tags": [
+            "Materia",
+            "Desynthesis"
+        ],
+        "InternalName": "DEMATSYNTH",
+        "RepoUrl": "https://github.com/lewizard14/dematerial-synths/tree/main",
+        "DownloadCount": 1,
+        "LastUpdate": 1758819834,
+        "DownloadLinkInstall": "https://github.com/lewizard14/dematerial-synths/versions/0.0.0.1.zip",
+        "DownloadLinkUpdate": "https://github.com/lewizard14/dematerial-synths/versions/0.0.0.1.zip",
+        "AssemblyVersion": "0.0.0.1",
+        "ApplicableVersion": "any",
+        "DalamudApiLevel": "13",
+        "Changelog": "Init",
+        "IconUrl": "https://github.com/lewizard14/dematerial-synths/Data/icon.png"
+    }
+]
