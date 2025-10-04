@@ -46,12 +46,12 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
     // Window's that I use, base window to the settings... need these to actually show shit 
     internal WindowSystem windowSystem;
     internal MainWindow mainWindow;
-    internal SettingsWindowV2 settingsWindowV2;
+    internal SettingsWindow settingsWindow;
     // internal OverlayWindow overlayWindow;
     // internal DebugWindow debugWindow;
 
     // Taskmanager from Ecommons
-    // internal TaskManager TaskManager;
+    internal TaskManager TaskManager;
 
     // // Internal IPC's that I use for... well plugins. 
     // internal LifestreamIPC Lifestream;
@@ -83,7 +83,7 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
         // all the windows
         windowSystem = new();
         mainWindow = new();
-        settingsWindowV2 = new();
+        settingsWindow = new();
         // overlayWindow = new();
         // debugWindow = new();
 
@@ -101,7 +101,7 @@ public sealed partial class DEMATSYNTH : IDalamudPlugin
         };
         Svc.PluginInterface.UiBuilder.OpenConfigUi += () =>
         {
-            settingsWindowV2.IsOpen = true;
+            settingsWindow.IsOpen = true;
         };
         // DictionaryCreation();
     }

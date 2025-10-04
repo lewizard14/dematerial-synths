@@ -89,7 +89,7 @@ namespace DEMATSYNTH.Ui
         {
           if (ImGui.Button("Settings", new Vector2(ImGui.GetContentRegionAvail().X, 30)))
             {
-                P.settingsWindowV2.IsOpen = !P.settingsWindowV2.IsOpen;
+                P.settingsWindow.IsOpen = !P.settingsWindow.IsOpen;
             }
         }
 
